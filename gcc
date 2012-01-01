@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/bin/gcc $(echo $@ | sed -e "s/-Werror/-Wall/g")
+gcc $(echo $@ | sed -e "s/-Werror/-Wall/g")

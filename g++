@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/bin/g++ $(echo $@ | sed -e "s/-Werror/-Wall/g")
+g++ $(echo $@ | sed -e "s/-Werror/-Wall/g")

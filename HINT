@@ -1,0 +1,1 @@
+./bootstrap --prefix=${HOME}/opt --disable-ffmpeg CC=${PWD}/gcc CXX=${PWD}/g++

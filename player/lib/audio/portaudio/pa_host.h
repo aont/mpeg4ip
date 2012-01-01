@@ -48,16 +48,16 @@ extern "C"
 #define SUPPORT_AUDIO_CAPTURE  (1)
 #endif
 
-#ifndef int32
+#ifndef _INT32
     typedef long int32;
 #endif
-#ifndef uint32
+#ifndef _UINT32
     typedef unsigned long uint32;
 #endif
-#ifndef int16
+#ifndef _INT16
     typedef short int16;
 #endif
-#ifndef uint16
+#ifndef _UINT16
     typedef unsigned short uint16;
 #endif
 
