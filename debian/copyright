@@ -1,0 +1,363 @@
+This package was debianized by Aubin Paul <aubin@outlyer.org> on Sun,  8 Dec
+2002 12:05:10 -0500, and by John Dong <jdong@ubuntu.com> on Thu, 10 Jan 2008
+12:17:11 -0500.
+
+It was downloaded from http://mpeg4ip.sourceforge.net/
+
+Upstream Authors: menno (menno@audiocoding.com) Alexander Kurpiers
+(a.kurpiers@nt.tu-darmstadt.de)
+
+The source tarball is an aggregate of several different works in which the main
+one, developed by menno and Alexander Kurpiers, is mpeg4ip.
+
+Other works include avilib, faad, ISO/ITU reference software, Quicktime for
+Linux, SDL, splay, UCL, vic, and openh323. Please see sections following the
+copyright statements for mpeg4ip for these.
+
+It has been repacked to remove items that are not covered by any of the 
+licenses below.  These items include:
+ - doc/{*.pdf, *.jpg}
+ - lib/rtp/test-libcommon
+
+=== mpeg4ip
+
+The works not listed specifically of another origin is original code by menno
+and Alexander Kurpiers. It is licensed under the terms of the Mozilla Public
+License (MPL) version 1.1. The complete text of the license is reproduced at the
+end of this file.
+
+=== avilib
+
+The lib/avi directory contains a copy of avilib extracted from lavtools. It is
+written by Rainer Johanni <rainer@johanni.de> and licensed under the terms of
+the GNU Lesser General Public License version 2.
+
+On Debian systems, the complete terms of this license can be found in the file
+`/usr/share/common-licenses/LGPL'
+
+=== FAAD
+
+The player/lib/audio/faad directory contains a copy of the Freeware Advanced
+Audio Decoder (FAAD). It is written by Menno Bakker <menno@audiocoding.com> and
+licensed under the terms of the GNU Lesser General Public License version 2.
+
+On Debian systems, the complete terms of this license can be found in the file
+`/usr/share/common-licenses/LGPL'
+
+=== ISO MPEG-4 Reference
+
+The common/video/iso-mpeg4 directory contains the ISO MPEG-4 reference software
+written by the ISO and retrievable from http://www.iso.ch/ittf. The list of
+contributors varies for each source file and can be found in their headers.
+
+The terms found in the headers of the source files state:
+  ISO/IEC gives users of the MPEG-4 Video free license to this software module or
+  modifications thereof for use in hardware or software products claiming conformance to the
+  MPEG-4 Video.
+  Those intending to use this software module in hardware or software products are
+  advised that its use may infringe existing patents.
+  The original developer of this software module and his/her company,
+  the subsequent editors and their companies,
+  and ISO/IEC have no liability for use of this software module or modifications
+  thereof in an implementation.
+  Copyright is not released for non MPEG-4 Video conforming products.
+  Microsoft retains full right to use the code for his/her own purpose,
+  assign or donate the code to a third party and to inhibit third parties from
+  using the code for non <MPEG standard> conforming products.
+  This copyright notice must be included in all copies or derivative works.
+
+=== Quicktime For Linux
+
+The lib/mp4 directory includes, though the author notes is deprecated, the
+Quicktime For Linux software retrieved from
+http://heroinewarrior.com/quicktime.php3.
+
+The full license terms can be found in lib/mp4/README_ORIGINAL but state:
+*****
+
+This is a Quicktime library for UNIX in a freely redistributable,
+statically linkable library.  You can statically link it in a program
+and charge money for the program.  The only condition is that if you
+use it in a program, you must put the author's name and email
+somewhere.  If you improve the library itself or add a free codec to
+it, you should release your improvements.  If you redistribute the
+code, you must also redistribute the author information and
+documentation.  At this time it's very popular to license stuff under
+the GPL.  You are free to include this library in a derived work and
+license the derived work under GPL.
+
+*****
+
+On Debian systems, a copy of the GPL can be found at
+`/usr/share/common-licenses/GPL'.
+
+=== Simple DirectMedia Layer
+
+The lib/SDL directory contains a bundled version of the Simple DirectMedia Layer
+(SDL) software retrievable from http://www.libsdl.org/.
+
+It is licensed under the terms of the GNU Library General Public License (LGPL),
+version 2. On Debian systems, a copy of the LGPL can be found at
+`/usr/share/common-licenses/LGPL'.
+
+=== splay
+
+The player/audio/mp3 directory contains a bundled version of splay retrievable from
+http://splay.sourceforge.net/.
+
+It is licensed under the terms of the GNU Library General Public License (LGPL),
+version 2. On Debian systems, a copy of the LGPL can be found at
+`/usr/share/common-licenses/LGPL'.
+
+
+=== UCL Common Multimedia Library
+
+The lib/rtp directory contains a bundled version of the UCL Common Multimedia
+Library from http://www-mice.cs.ucl.ac.uk/multimedia/software/common/.
+
+The terms of the license, found in lib/rtp/COPYRIGHT, state:
+****
+Copyright (C) 1995-2000 University College London
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, is permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+     This product includes software developed by the Computer Science
+     Department at University College London
+4. Neither the name of the University nor of the Department may be used
+   to endorse or promote products derived from this software without
+   specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE AUTHORS AND CONTRIBUTORS ``AS IS'' AND ANY
+EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+This product includes software developed by the Computer Systems
+Engineering Group at Lawrence Berkeley Laboratory.
+
+Encryption features of this software use the RSA Data Security, Inc. MD5
+Message-Digest Algorithm.
+****
+
+=== vic, openh323
+
+The player/plugin/video/h261 directory contains a mixture of code taken from the
+vic and openh323 sources. They are distributed under the MPL or the Regents of
+University of California copyright (see individual file headers for which
+applies). The complete text of the MPL is reproduced at the end of this file.
+The Regents of University of California copyright terms are:
+ *
+ * Copyright (c) 1993 Regents of the University of California.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. All advertising materials mentioning features or use of this software
+ *    must display the following acknowledgement:
+ * This product includes software developed by the Network Research
+ * Group at Lawrence Berkeley Laboratory.
+ * 4. Neither the name of the University nor of the Laboratory may be used
+ *    to endorse or promote products derived from this software without
+ *    specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+===========================================================
+
+                          MOZILLA PUBLIC LICENSE
+                                Version 1.1
+
+                              ---------------
+
+1. Definitions.
+
+     1.0.1. "Commercial Use" means distribution or otherwise making the
+     Covered Code available to a third party.
+
+     1.1. "Contributor" means each entity that creates or contributes to
+     the creation of Modifications.
+
+     1.2. "Contributor Version" means the combination of the Original
+     Code, prior Modifications used by a Contributor, and the Modifications
+     made by that particular Contributor.
+
+     1.3. "Covered Code" means the Original Code or Modifications or the
+     combination of the Original Code and Modifications, in each case
+     including portions thereof.
+
+     1.4. "Electronic Distribution Mechanism" means a mechanism generally
+     accepted in the software development community for the electronic
+     transfer of data.
+
+     1.5. "Executable" means Covered Code in any form other than Source
+     Code.
+
+     1.6. "Initial Developer" means the individual or entity identified
+     as the Initial Developer in the Source Code notice required by Exhibit
+     A.
+
+     1.7. "Larger Work" means a work which combines Covered Code or
+     portions thereof with code not governed by the terms of this License.
+
+     1.8. "License" means this document.
+
+     1.8.1. "Licensable" means having the right to grant, to the maximum
+     extent possible, whether at the time of the initial grant or
+     subsequently acquired, any and all of the rights conveyed herein.
+
+     1.9. "Modifications" means any addition to or deletion from the
+     substance or structure of either the Original Code or any previous
+     Modifications. When Covered Code is released as a series of files, a
+     Modification is:
+          A. Any addition to or deletion from the contents of a file
+          containing Original Code or previous Modifications.
+
+          B. Any new file that contains any part of the Original Code or
+          previous Modifications.
+
+     1.10. "Original Code" means Source Code of computer software code
+     which is described in the Source Code notice required by Exhibit A as
+     Original Code, and which, at the time of its release under this
+     License is not already Covered Code governed by this License.
+
+     1.10.1. "Patent Claims" means any patent claim(s), now owned or
+     hereafter acquired, including without limitation,  method, process,
+     and apparatus claims, in any patent Licensable by grantor.
+
+     1.11. "Source Code" means the preferred form of the Covered Code for
+     making modifications to it, including all modules it contains, plus
+     any associated interface definition files, scripts used to control
+     compilation and installation of an Executable, or source code
+     differential comparisons against either the Original Code or another
+     well known, available Covered Code of the Contributor's choice. The
+     Source Code can be in a compressed or archival form, provided the
+     appropriate decompression or de-archiving software is widely available
+     for no charge.
+
+     1.12. "You" (or "Your")  means an individual or a legal entity
+     exercising rights under, and complying with all of the terms of, this
+     License or a future version of this License issued under Section 6.1.
+     For legal entities, "You" includes any entity which controls, is
+     controlled by, or is under common control with You. For purposes of
+     this definition, "control" means (a) the power, direct or indirect,
+     to cause the direction or management of such entity, whether by
+     contract or otherwise, or (b) ownership of more than fifty percent
+     (50%) of the outstanding shares or beneficial ownership of such
+     entity.
+
+2. Source Code License.
+
+     2.1. The Initial Developer Grant.
+     The Initial Developer hereby grants You a world-wide, royalty-free,
+     non-exclusive license, subject to third party intellectual property
+     claims:
+          (a)  under intellectual property rights (other than patent or
+          trademark) Licensable by Initial Developer to use, reproduce,
+          modify, display, perform, sublicense and distribute the Original
+          Code (or portions thereof) with or without Modifications, and/or
+          as part of a Larger Work; and
+
+          (b) under Patents Claims infringed by the making, using or
+          selling of Original Code, to make, have made, use, practice,
+          sell, and offer for sale, and/or otherwise dispose of the
+          Original Code (or portions thereof).
+
+          (c) the licenses granted in this Section 2.1(a) and (b) are
+          effective on the date Initial Developer first distributes
+          Original Code under the terms of this License.
+
+          (d) Notwithstanding Section 2.1(b) above, no patent license is
+          granted: 1) for code that You delete from the Original Code; 2)
+          separate from the Original Code;  or 3) for infringements caused
+          by: i) the modification of the Original Code or ii) the
+          combination of the Original Code with other software or devices.
+
+     2.2. Contributor Grant.
+     Subject to third party intellectual property claims, each Contributor
+     hereby grants You a world-wide, royalty-free, non-exclusive license
+
+          (a)  under intellectual property rights (other than patent or
+          trademark) Licensable by Contributor, to use, reproduce, modify,
+          display, perform, sublicense and distribute the Modifications
+          created by such Contributor (or portions thereof) either on an
+          unmodified basis, with other Modifications, as Covered Code
+          and/or as part of a Larger Work; and
+
+          (b) under Patent Claims infringed by the making, using, or
+          selling of  Modifications made by that Contributor either alone
+          and/or in combination with its Contributor Version (or portions
+          of such combination), to make, use, sell, offer for sale, have
+          made, and/or otherwise dispose of: 1) Modifications made by that
+          Contributor (or portions thereof); and 2) the combination of
+          Modifications made by that Contributor with its Contributor
+          Version (or portions of such combination).
+
+          (c) the licenses granted in Sections 2.2(a) and 2.2(b) are
+          effective on the date Contributor first makes Commercial Use of
+          the Covered Code.
+
+          (d)    Notwithstanding Section 2.2(b) above, no patent license is
+          granted: 1) for any code that Contributor has deleted from the
+          Contributor Version; 2)  separate from the Contributor Version;
+          3)  for infringements caused by: i) third party modifications of
+          Contributor Version or ii)  the combination of Modifications made
+          by that Contributor with other software  (except as part of the
+          Contributor Version) or other devices; or 4) under Patent Claims
+          infringed by Covered Code in the absence of Modifications made by
+          that Contributor.
+
+3. Distribution Obligations.
+
+     3.1. Application of License.
+     The Modifications which You create or to which You contribute are
+     governed by the terms of this License, including without limitation
+     Section 2.2. The Source Code version of Covered Code may be
+     distributed only under the terms of this License or a future version
+     of this License released under Section 6.1, and You must include a
+     copy of this License with every copy of the Source Code You
+     distribute. You may not offer or impose any terms on any Source Code
+     version that alters or restricts the applicable version of this
+     License or the recipients' rights hereunder. However, You may include
+     an additional document offering the additional rights described in
+     Section 3.5.
+
+     3.2. Availability of Source Code.
+     Any Modification which You create or to which You contribute must be
+     made available in Source Code form under the terms of this License
+     either on the same media as an Executable version or via an accepted
+     Electronic Distribution Mechanism to anyone to whom you made an
+     Executable version available; and if made available via Electronic
+     Distribution Mechanism, must remain available for at least twelve (12)
+     months after the date it initially became available, or at least six
+     (6) months after a subsequent version of that particular Modification
+     has been made available to

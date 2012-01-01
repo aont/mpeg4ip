@@ -1,0 +1,3 @@
+version=3
+
+http://sf.net/mpeg4ip/mpeg4ip-(.*)\.tar\.gz

@@ -1,0 +1,7 @@
+01_Makefile.in.dpatch
+02_type_basic.cpp.dpatch
+03_typo.dpatch
+04_bashishms.dpatch
+05_multiple_parameters.dpatch
+07_ffmepg-path.diff
+08_strcasestr.dpatch

@@ -1,0 +1,150 @@
+Source: mpeg4ip
+Section: sound
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Christian Marillat <marillat@debian.org>
+Homepage: http://mpeg4ip.sourceforge.net/
+Standards-Version: 3.7.3
+Build-Depends: debhelper (>> 5), libasound2-dev, libid3tag0-dev,
+ libavcodec-dev, libxvidcore-dev, libid3-3.8.3-dev, libgtk2.0-dev,
+ libesd0-dev | libesd-dev, libsdl1.2-dev, liba52-dev, libmp3lame-dev |
+ liblame-dev,  libxt-dev | xlibs-static-dev (<< 6.8.1-1), nasm [i386],
+ libavutil-dev, dpatch, libx264-dev, autotools-dev
+
+Package: mpeg4ip-server
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: end-to-end system to explore streaming multimedia
+ The mpeg4ip player supports the following :
+ .
+ File formats: avi, mp4, limited .mov, .mpg (transport and program streams),
+  .wav, raw aac, raw mp3, raw mp4v, raw .h264
+ .
+ Video codecs: mpeg-4 (xvid, xvid-1.0, ISO reference), mpeg1/2 (libmpeg3,
+ mpeg2dec), H.261, YUV (i420 raw) Through ffmpeg: h.263, Sorenson, some
+ MJPEG, simple H.264
+ .
+ Audio Codecs: aac, mp3, celp, ac3 (with separate download), raw PCM Through
+ ffmpeg: AMR NB, AMR WB, G.711 alaw and ulaw
+ .
+ Streaming capability: RTSP, SDP, RTP (rfc 1890 for raw audio, 2250 for
+ mpeg1/2 audio and video, 3016 for mpeg4 video, 3119 for mp3, 3640 for
+ aac/celp audio, 3267 for AMR octet-aligned only), mpeg2 transport streams
+ (mpeg2 video, mp3 and ac3 audio), both multicast and streaming.
+ .
+ This package contains the mp4 server.
+
+Package: libmp4v2-0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}
+Replaces: libmp4-0, libmpeg4ip-0 (<= 1:1.4.1-0.0)
+Conflicts: libmp4-0
+Description: freeware Advanced Audio Decoder - runtime files
+ FAAD2 is the fastest ISO AAC audio decoder available. FAAD2 correctly
+ decodes all MPEG-4 and MPEG-2 MAIN, LOW, LTP, LD and ER object type AAC
+ files.
+ .
+ This package contains the MP4 (aka AAC) library.
+
+Package: libmp4v2-dev
+Section: libdevel
+Architecture: any
+Depends: libmp4v2-0 (>= ${source:Version}), libmpeg4ip-dev
+Replaces: libmp4-dev, libmpeg4ip-dev (<= 1:1.4.1-0.0)
+Conflicts: libmp4-dev
+Description: freeware Advanced Audio Decoder - development files
+ FAAD2 is the fastest ISO AAC audio decoder available. FAAD2 correctly
+ decodes all MPEG-4 and MPEG-2 MAIN, LOW, LTP, LD and ER object type AAC
+ files.
+ .
+ This package contains the MP4 (aka AAC) development files.
+
+Package: libmpeg4ip-dev
+Section: libdevel
+Architecture: any
+Depends: libmpeg4ip-0 (>= ${source:Version})
+Description: end-to-end system to explore streaming multimedia
+ The mpeg4ip player supports the following :
+ .
+ File formats: avi, mp4, limited .mov, .mpg (transport and program streams),
+  .wav, raw aac, raw mp3, raw mp4v, raw .h264
+ .
+ Video codecs: mpeg-4 (xvid, xvid-1.0, ISO reference), mpeg1/2 (libmpeg3,
+ mpeg2dec), H.261, YUV (i420 raw) Through ffmpeg: h.263, Sorenson, some
+ MJPEG, simple H.264
+ .
+ Audio Codecs: aac (faad, faad2 with separate download), mp3, celp, ac3
+ (with separate download), raw PCM Through ffmpeg: AMR NB, AMR WB, G.711
+ alaw and ulaw
+ .
+ Streaming capability: RTSP, SDP, RTP (rfc 1890 for raw audio, 2250 for
+ mpeg1/2 audio and video, 3016 for mpeg4 video, 3119 for mp3, 3640 for
+ aac/celp audio, 3267 for AMR octet-aligned only), mpeg2 transport streams
+ (mpeg2 video, mp3 and ac3 audio), both multicast and streaming.
+ .
+ This package contains the MP4 (aka AAC) development files.
+
+Package: libmpeg4ip-0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: end-to-end system to explore streaming multimedia
+ The mpeg4ip player supports the following :
+ .
+ File formats: avi, mp4, limited .mov, .mpg (transport and program streams),
+  .wav, raw aac, raw mp3, raw mp4v, raw .h264
+ .
+ Video codecs: mpeg-4 (xvid, xvid-1.0, ISO reference), mpeg1/2 (libmpeg3,
+ mpeg2dec), H.261, YUV (i420 raw) Through ffmpeg: h.263, Sorenson, some
+ MJPEG, simple H.264
+ .
+ Audio Codecs: aac (faad, faad2 with separate download), mp3, celp, ac3
+ (with separate download), raw PCM Through ffmpeg: AMR NB, AMR WB, G.711
+ alaw and ulaw
+ .
+ Streaming capability: RTSP, SDP, RTP (rfc 1890 for raw audio, 2250 for
+ mpeg1/2 audio and video, 3016 for mpeg4 video, 3119 for mp3, 3640 for
+ aac/celp audio, 3267 for AMR octet-aligned only), mpeg2 transport streams
+ (mpeg2 video, mp3 and ac3 audio), both multicast and streaming.
+ .
+ This package contains the MP4 (aka AAC) library.
+
+Package: libmpeg4ip-doc
+Section: libdevel
+Architecture: all
+Description: end-to-end system to explore streaming multimedia - documentation
+ The mpeg4ip player supports the following :
+ .
+ File formats: avi, mp4, limited .mov, .mpg (transport and program streams),
+  .wav, raw aac, raw mp3, raw mp4v, raw .h264
+ .
+ Video codecs: mpeg-4 (xvid, xvid-1.0, ISO reference), mpeg1/2 (libmpeg3,
+ mpeg2dec), H.261, YUV (i420 raw) Through ffmpeg: h.263, Sorenson, some
+ MJPEG, simple H.264
+ .
+ Audio Codecs: aac (faad, faad2 with separate download), mp3, celp, ac3
+ (with separate download), raw PCM Through ffmpeg: AMR NB, AMR WB, G.711
+ alaw and ulaw
+ .
+ Streaming capability: RTSP, SDP, RTP (rfc 1890 for raw audio, 2250 for
+ mpeg1/2 audio and video, 3016 for mpeg4 video, 3119 for mp3, 3640 for   
+ aac/celp audio, 3267 for AMR octet-aligned only), mpeg2 transport streams
+ (mpeg2 video, mp3 and ac3 audio), both multicast and streaming.
+ .
+ This package contains the documentation files.
+
+Package: mpeg4ip-utils
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: end-to-end system to explore streaming multimedia
+ This package contains various utilities :
+ .
+  - mp4info - display information about tracks in mp4 file
+  - mp4dump - dumps contents from mp4 files
+  - mp4trackdump - dumps track information
+  - mp4tags - sets iTunes tag information
+  - mp4art - extract iTunes cover art
+  - mp4videoinfo - dump information about video tracks in mp4 files
